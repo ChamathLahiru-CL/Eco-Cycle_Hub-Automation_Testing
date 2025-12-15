@@ -12,19 +12,27 @@ public class registrationPage {
     }
 
     public void createAccount(String name, String email, String password, String phone, String address, String city, String zipcode) throws InterruptedException{
-
+        Thread.sleep(2000);
         driver.findElement(By.linkText("Explore Shop Products")).click();
+        Thread.sleep(1000);
         driver.findElement(By.cssSelector("a[href='/register?type=customer']")).click();
+        Thread.sleep(300);
         driver.findElement(By.cssSelector("#name")).sendKeys(name);
+        Thread.sleep(300);
         driver.findElement(By.cssSelector("#email")).sendKeys(email);
+        Thread.sleep(300);
         driver.findElement(By.cssSelector("input[placeholder='Create a password']")).sendKeys(password);
+        Thread.sleep(300);
         driver.findElement(By.cssSelector("input[placeholder='Enter your phone number']")).sendKeys(phone);
+        Thread.sleep(300);
         driver.findElement(By.xpath("//input[@id='address']")).sendKeys(address);
+        Thread.sleep(300);
         driver.findElement(By.id("city")).sendKeys(city);
+        Thread.sleep(300);
         driver.findElement(By.id("zipCode")).sendKeys(zipcode);
-        Thread.sleep(3000);
+        Thread.sleep(400);
         driver.findElement(By.xpath("//button[text()='Create account']")).click();
-
+        Thread.sleep(2000);
     }
 
     public void validateName (String name, String email, String password, String phone, String address, String city, String zipcode){
