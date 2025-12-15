@@ -17,12 +17,12 @@ public class HappyPathTestCase extends BaseTest{
     public void oderItem() throws InterruptedException{
 //        ExtentTest test = extent.createTest("TestHappyPath");
 //        test.log(Status.INFO, "Starting test");
+        Thread.sleep(1200);
+        registrationPage.createAccount("Test040","test040@gmail.com","TEST123456","119","Road","Minuwangoda","1234");
         Thread.sleep(1000);
-//        registrationPage.createAccount("Test037","test037@gmail.com","TEST123456","119","Road","Minuwangoda","1234");
-//        Thread.sleep(1000);
-//        loginPage.correctLogin("test036@gmail.com","TEST123456");
-        directLoginPage.directLogin("sisil223@gmail.com","123456");
-//        Thread.sleep(300);
+        loginPage.correctLogin("test040@gmail.com","TEST123456");
+//        directLoginPage.directLogin("sisil223@gmail.com","123456");
+        Thread.sleep(3000);
         productPage.addProductToCart("Biodegradable Pot");
         Thread.sleep(2000);
         productPage.addProductToCart("Biodegradable Trash bag");
