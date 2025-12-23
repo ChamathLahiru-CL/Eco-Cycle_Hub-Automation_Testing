@@ -4,7 +4,6 @@
 [![Selenium](https://img.shields.io/badge/Selenium-4.38.0-green.svg)](https://www.selenium.dev/)
 [![TestNG](https://img.shields.io/badge/TestNG-7.10.2-red.svg)](https://testng.org/)
 [![Maven](https://img.shields.io/badge/Maven-Build-blue.svg)](https://maven.apache.org/)
-[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 A comprehensive **Selenium WebDriver automation testing framework** built with **Java** and **TestNG** for the Eco-Cycle Hub web application. This project demonstrates professional-level test automation practices including the Page Object Model (POM) design pattern, data-driven testing, extent reporting, and screenshot capture for failed test cases.
 
@@ -352,7 +351,7 @@ Contributions are welcome! Please follow these steps:
 
 ## 📄 License
 
-This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
+This project is open source and available for educational and commercial use.
 
 ---
 
@@ -360,8 +359,6 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 **Chamath Lahiru Jayasuriya**
 
-- 📧 Email: [your.email@example.com](mailto:your.email@example.com)
-- 💼 LinkedIn: [Your LinkedIn Profile](https://linkedin.com/in/yourprofile)
 - 🐙 GitHub: [@ChamathLahiru-CL](https://github.com/ChamathLahiru-CL)
 - 🌐 Project Link: [Eco-Cycle Hub Automation Testing](https://github.com/ChamathLahiru-CL/Eco-Cycle_Hub-Automation_Testing)
 
