@@ -28,11 +28,27 @@ public class LoginTestCase extends BaseTest{
 
     @Test
     public void testDirect()throws InterruptedException{
-        ExtentTest test = extent.createTest("TestDirect");
-        test.log(Status.PASS, "Step description");
-        test.log(Status.FAIL, "Step description");
         Thread.sleep(1000);
         directLoginPage.directLogin("sisil223@gmail.com","123456");
+        productPage.addProductToCart("Biodegradable Pot");
+        Thread.sleep(1000);
+        productPage.addProductToCart("Biodegradable Pot");
+        Thread.sleep(1000);
+        productPage.openShoppingCart();
+        Thread.sleep(500);
+    }
+
+//    Check if the error is coming to the report with screenshots.
+    @Test
+    public void checkErrorLogin()throws InterruptedException{
+        Thread.sleep(900);
+        directLoginPage.directLogin("sisil223@gmail.com","1234567");
+        productPage.addProductToCart("Biodegradable Pot");
+        Thread.sleep(1000);
+        productPage.addProductToCart("Biodegradable Pot");
+        Thread.sleep(1000);
+        productPage.openShoppingCart();
+        Thread.sleep(500);
     }
 
 }

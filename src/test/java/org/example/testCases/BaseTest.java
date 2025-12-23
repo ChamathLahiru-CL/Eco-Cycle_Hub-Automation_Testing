@@ -129,7 +129,8 @@ public class BaseTest {
     @AfterTest
     public void tearDown(){
         extent.flush();
-//        driver.quit();
+        driver.quit();
+//        driver.close();
     }
 
 }
