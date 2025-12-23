@@ -15,9 +15,6 @@ public class HappyPathTestCase extends BaseTest{
 
     @Test
     public void oderItem() throws InterruptedException{
-//        ExtentTest test = extent.createTest("TestHappyPath");
-//        test.log(Status.INFO, "Starting test");
-        Thread.sleep(1200);
         registrationPage.createAccount("Test040","test040@gmail.com","TEST123456","119","Road","Minuwangoda","1234");
         Thread.sleep(1000);
         loginPage.correctLogin("test040@gmail.com","TEST123456");
